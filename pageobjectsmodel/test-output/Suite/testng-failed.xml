@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test2(failed)" parallel="tests">
+    <parameter name="browserName" value="lambdafirefox"/>
+    <classes>
+      <class name="reusables.Script3">
+        <methods>
+          <include name="sample"/>
+          <include name="baseTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script3 -->
+      <class name="reusables.Script2">
+        <methods>
+          <include name="baseTest"/>
+          <include name="sample"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script2 -->
+      <class name="reusables.Script1">
+        <methods>
+          <include name="baseTest"/>
+          <include name="sample"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" name="Test1(failed)" parallel="tests">
+    <parameter name="browserName" value="lambdachrome"/>
+    <classes>
+      <class name="reusables.Script3">
+        <methods>
+          <include name="sample"/>
+          <include name="baseTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script3 -->
+      <class name="reusables.Script2">
+        <methods>
+          <include name="baseTest"/>
+          <include name="sample"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script2 -->
+      <class name="reusables.Script1">
+        <methods>
+          <include name="baseTest"/>
+          <include name="sample"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- reusables.Script1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+
+	<test thread-count="5" name="Test1">
+		<parameter name="browserName" value="lambdachrome"></parameter>
+		<classes>
+			<class name="reusables.Script1" />
+			<class name="reusables.Script2" />
+			<class name="reusables.Script3" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test2">
+		<parameter name="browserName" value="lambdafirefox"></parameter>
+		<classes>
+			<class name="reusables.Script1" />
+			<class name="reusables.Script2" />
+			<class name="reusables.Script3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

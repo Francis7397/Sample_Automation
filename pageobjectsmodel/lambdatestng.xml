@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="LambaTestSuite" parallel="tests">
+
+	<test name="WIN8TEST">
+		<parameter name="browserName" value="lambdachrome"></parameter>
+
+		
+		<classes>
+			<class name="com.la.lambdatest.LambdaTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="WIN10TEST">
+		
+	<parameter name="browserName" value="lambdafirefox"></parameter>
+		<classes>
+			<class name="com.la.lambdatest.LambdaTest" />
+		</classes>
+	</test>  
+	 <!-- <test name="MACTEST">
+		<parameter name="browser" value="safari" />
+		<parameter name="version" value="11.0" />
+		<parameter name="platform" value="macos 10.13" />
+		<classes>
+			<class name="LambdaTest.TestNGToDo" />
+		</classes>
+	</test> -->
+
+</suite>

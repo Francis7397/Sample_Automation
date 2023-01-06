@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [LambaTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="WIN10TEST(failed)">
+    <parameter name="browserName" value="lambdafirefox"/>
+    <classes>
+      <class name="com.la.lambdatest.LambdaTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="basicTest"/>
+          <include name="setup"/>
+          <include name="testUntitledTestCase1"/>
+          <include name="testUntitledTestCase2"/>
+          <include name="testUntitledTestCase"/>
+        </methods>
+      </class> <!-- com.la.lambdatest.LambdaTest -->
+    </classes>
+  </test> <!-- WIN10TEST(failed) -->
+  <test thread-count="3" parallel="tests" name="WIN8TEST(failed)">
+    <parameter name="browserName" value="lambdachrome"/>
+    <classes>
+      <class name="com.la.lambdatest.LambdaTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="basicTest"/>
+          <include name="setup"/>
+          <include name="testUntitledTestCase1"/>
+          <include name="testUntitledTestCase2"/>
+          <include name="testUntitledTestCase"/>
+        </methods>
+      </class> <!-- com.la.lambdatest.LambdaTest -->
+    </classes>
+  </test> <!-- WIN8TEST(failed) -->
+</suite> <!-- Failed suite [LambaTestSuite] -->
